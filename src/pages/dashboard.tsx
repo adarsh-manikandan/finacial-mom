@@ -240,11 +240,11 @@ export default function Dashboard() {
         <div className="bg-white p-4 sm:p-6 rounded-lg shadow">
           <h2 className="text-xl font-semibold mb-4">AI Insights</h2>
           <div className="space-y-4">
-            <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+            <div className="p-4 bg-white rounded-lg border border-gray-200">
               <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
                 <div>
-                  <h3 className="font-medium text-blue-800">Spending Alert</h3>
-                  <p className="text-blue-600 mt-1">
+                  <h3 className="font-medium text-gray-800">Spending Alert</h3>
+                  <p className="text-gray-600 mt-1">
                     Your entertainment spending is 5% higher than last month. Consider reducing eating out to save $150 monthly.
                   </p>
                 </div>
@@ -253,7 +253,7 @@ export default function Dashboard() {
                     onClick={() => {
                       handleSendMessage("Tell me more about my entertainment spending and how I can reduce it");
                     }}
-                    className="w-full sm:w-auto px-3 py-1.5 text-sm bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors"
+                    className="w-full sm:w-auto px-3 py-1.5 text-sm text-gray-600 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
                   >
                     Tell me more
                   </button>
@@ -268,11 +268,11 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="p-4 bg-green-50 rounded-lg border border-green-200">
+            <div className="p-4 bg-white rounded-lg border border-gray-200">
               <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
                 <div>
-                  <h3 className="font-medium text-green-800">Savings Opportunity</h3>
-                  <p className="text-green-600 mt-1">
+                  <h3 className="font-medium text-gray-800">Savings Opportunity</h3>
+                  <p className="text-gray-600 mt-1">
                     You could save an additional $200 monthly by reducing transportation costs. Consider carpooling or public transit.
                   </p>
                 </div>
@@ -281,7 +281,7 @@ export default function Dashboard() {
                     onClick={() => {
                       handleSendMessage("Tell me more about transportation savings and carpooling options");
                     }}
-                    className="w-full sm:w-auto px-3 py-1.5 text-sm bg-green-100 text-green-700 rounded-lg hover:bg-green-200 transition-colors"
+                    className="w-full sm:w-auto px-3 py-1.5 text-sm text-gray-600 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
                   >
                     Tell me more
                   </button>
